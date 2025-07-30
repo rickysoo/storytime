@@ -1,0 +1,27 @@
+{
+  "name": "storytime-training-generator",
+  "version": "1.0.0",
+  "description": "AI-powered training story generator",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python server.py",
+    "start": "python server.py 8080",
+    "setup": "echo \"Copy .env.example to .env.local and add your OpenAI API key\""
+  },
+  "dependencies": {
+    "python-dotenv": "^1.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "training",
+    "ai",
+    "stories",
+    "openai",
+    "education"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "python": ">=3.7"
+  }
+}

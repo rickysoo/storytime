@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(start \"\" \"C:\\Users\\ricky\\Dropbox\\Apps\\Storytime\\index.html\")",
+      "Bash(explorer:*)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "Bash(echo $env:USERPROFILE)",
+      "Bash(mkdir:*)",
+      "Bash(move:*)",
+      "Bash(cp:*)",
+      "Bash(rm:*)",
+      "Bash(taskkill:*)",
+      "Bash(python:*)",
+      "Bash(start python:*)",
+      "Bash(ls:*)",
+      "Bash(pip install:*)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": []
+  }
+}
