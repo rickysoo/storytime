@@ -42,6 +42,14 @@ class StoryGenerator {
         try {
             const story = await this.generateStoryWithAPI(formData);
             this.displayStory(story);
+            
+            // Track story generation event
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'story_generated', {
+                    'event_category': 'engagement',
+                    'event_label': 'successful_generation'
+                });
+            }
         } catch (error) {
             console.error('Story generation error:', error);
             
@@ -320,6 +328,14 @@ class StoryGenerator {
             const textContent = this.storyContent.innerText || this.storyContent.textContent;
             await navigator.clipboard.writeText(textContent);
             
+            // Track copy event
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'story_copied', {
+                    'event_category': 'engagement',
+                    'event_label': 'copy_to_clipboard'
+                });
+            }
+            
             // Visual feedback
             const originalText = this.copyBtn.innerHTML;
             this.copyBtn.innerHTML = '<i class="fas fa-check"></i> Copied!';
@@ -369,6 +385,14 @@ class StoryGenerator {
             try {
                 const newStory = await this.generateStoryWithAPI(formData);
                 this.displayStory(newStory);
+                
+                // Track story regeneration event
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'story_regenerated', {
+                        'event_category': 'engagement',
+                        'event_label': 'story_variation'
+                    });
+                }
             } catch (error) {
                 console.error('Story regeneration error:', error);
                 
@@ -454,6 +478,14 @@ class StoryGenerator {
         
         // Focus on first field
         document.getElementById('trainingDetails').focus();
+        
+        // Track start over event
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'form_cleared', {
+                'event_category': 'engagement',
+                'event_label': 'start_over'
+            });
+        }
         
         // Show notification
         this.showNotification('Form cleared! Ready for a new story.', 'success');
