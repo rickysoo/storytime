@@ -192,6 +192,7 @@ CRITICAL REQUIREMENTS:
 - Demonstrate how "I" applied the training concepts to overcome obstacles
 - Keep the story to exactly 400 words or less
 - Format the response as clean HTML with appropriate tags (no markdown)
+- Use single line spacing throughout, avoid double spacing between lines
 
 STORY TONE REQUIREMENTS:
 - Make the story FUNNY and engaging with humor, light moments, or amusing situations
@@ -223,7 +224,7 @@ Structure your HTML response as:
 <h4>How to Use This Story</h4>
 <ul>
 <li><strong>Opening Activity:</strong> [Detailed suggestion for introducing the story - timing, setup, participant engagement]</li>
-<li><strong>Discussion Questions:</strong> [2-3 specific questions to facilitate meaningful group discussion, with follow-up prompts]</li>
+<li><strong>Discussion Questions:</strong> [2-3 specific questions to facilitate meaningful group discussion, with follow-up prompts - format as single line spacing, not double spacing]</li>
 <li><strong>Learning Connection:</strong> [Explicit guidance on linking story elements to key training concepts and real workplace scenarios]</li>
 <li><strong>Action Planning:</strong> [Specific steps participants can take to apply the lessons in their own work environment]</li>
 </ul>
@@ -235,7 +236,7 @@ Structure your HTML response as:
 </div>
 </div>
 
-Ensure the HTML is well-formatted, uses semantic tags, and creates a professional appearance when rendered. The Training Application section should be comprehensive and provide detailed guidance for effective story utilization. Do not include any markdown formatting (**, ##, etc.) - use only HTML tags."""
+Ensure the HTML is well-formatted, uses semantic tags, and creates a professional appearance when rendered. Use single line spacing throughout - no double spacing between sentences or paragraphs. The Training Application section should be comprehensive and provide detailed guidance for effective story utilization. Do not include any markdown formatting (**, ##, etc.) - use only HTML tags."""
     
     try:
         with socketserver.TCPServer(("", port), APIRequestHandler, bind_and_activate=False) as httpd:
