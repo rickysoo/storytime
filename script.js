@@ -6,6 +6,7 @@ class StoryGenerator {
         this.loadingOverlay = document.getElementById('loadingOverlay');
         this.copyBtn = document.getElementById('copyBtn');
         this.regenerateBtn = document.getElementById('regenerateBtn');
+        this.startOverBtn = document.getElementById('startOverBtn');
         
         // Ensure loading overlay is hidden on init
         this.hideLoading();
@@ -17,6 +18,7 @@ class StoryGenerator {
         this.form.addEventListener('submit', (e) => this.handleFormSubmit(e));
         this.copyBtn.addEventListener('click', () => this.copyStoryToClipboard());
         this.regenerateBtn.addEventListener('click', () => this.regenerateStory());
+        this.startOverBtn.addEventListener('click', () => this.startOver());
     }
 
 
@@ -437,6 +439,24 @@ class StoryGenerator {
 
     delay(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    startOver() {
+        // Clear form fields
+        document.getElementById('trainingDetails').value = '';
+        document.getElementById('personalStatement').value = '';
+        
+        // Hide result container
+        this.resultContainer.style.display = 'none';
+        
+        // Clear story content
+        this.storyContent.innerHTML = '';
+        
+        // Focus on first field
+        document.getElementById('trainingDetails').focus();
+        
+        // Show notification
+        this.showNotification('Form cleared! Ready for a new story.', 'success');
     }
 }
 

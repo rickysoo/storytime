@@ -48,7 +48,7 @@
                             Training Details
                         </label>
                         <textarea id="trainingDetails" name="trainingDetails" rows="4" 
-                                  placeholder="Be specific about your training goals to get a more relevant story. Describe your training session: topic, audience, duration, objectives, and preferred tone."></textarea>
+                                  placeholder="Be specific about your training goals to get a more relevant story. Describe your training session: topic, audience, duration, objectives, and preferred tone. (Leave blank for random story)"></textarea>
                     </div>
 
                     <div class="form-group">
@@ -57,13 +57,24 @@
                             About You
                         </label>
                         <textarea id="personalStatement" name="personalStatement" rows="3" 
-                                  placeholder="What's one interesting or special thing about you? This will help create a personalized story with you as the main character."></textarea>
+                                  placeholder="What's one interesting or special thing about you? This will help create a personalized story with you as the main character. (Leave blank for random character)"></textarea>
                     </div>
 
-                    <button type="submit" class="generate-btn">
-                        <i class="fas fa-wand-magic-sparkles"></i>
-                        Generate Story
-                    </button>
+                    <div class="form-actions">
+                        <button type="submit" class="generate-btn">
+                            <i class="fas fa-wand-magic-sparkles"></i>
+                            Generate Story
+                        </button>
+                        <button type="button" class="start-over-btn" id="startOverBtn">
+                            <i class="fas fa-refresh"></i>
+                            Start Over
+                        </button>
+                    </div>
+                    
+                    <div class="form-hint">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Tip: Leave fields blank to generate a completely random story!</span>
+                    </div>
                 </form>
             </div>
 
