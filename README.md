@@ -1,5 +1,7 @@
 # StoryTime 1.0 - AI-Powered Training Story Generator
 
+> **🚀 [Try StoryTime Now →](https://storytime.rickysoo.com)**
+
 Transform your training sessions with engaging, personalized stories that make learning memorable! StoryTime 1.0 uses advanced AI to create compelling workplace scenarios tailored specifically to your training needs.
 
 ## ✨ What is StoryTime?
@@ -100,7 +102,7 @@ Every generated story includes:
 
 ## 🌟 Getting Started
 
-1. **Visit**: [Your StoryTime URL]
+1. **Visit**: **[https://storytime.rickysoo.com](https://storytime.rickysoo.com)**
 2. **Fill in the form** with your training details and background
 3. **Click "Generate Story"** and watch the magic happen
 4. **Use your story** to transform your next training session
@@ -133,6 +135,6 @@ Having issues or want to share feedback? We'd love to hear from you! This tool i
 
 **Ready to transform your training with the power of storytelling?**
 
-[🚀 **Start Creating Stories Now** →](your-app-url)
+[🚀 **Start Creating Stories Now** →](https://storytime.rickysoo.com)
 
 *Making training memorable, one story at a time.* ✨

@@ -1,7 +1,7 @@
 export default async function handler(req, res) {
   // Set CORS headers - restrict to specific origins in production
   const allowedOrigins = process.env.NODE_ENV === 'production' 
-    ? ['https://storytime-rickysoo.vercel.app', 'https://storytime-git-master-rickysoo.vercel.app'] // Vercel domain patterns
+    ? ['https://storytime.rickysoo.com', 'https://storytime-flame-eta.vercel.app'] // Official domain and Vercel deployment
     : ['http://localhost:8080', 'http://127.0.0.1:8080'];
   
   const origin = req.headers.origin;
