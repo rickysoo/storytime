@@ -133,7 +133,7 @@ def main():
                 'messages': [
                     {
                         'role': 'system',
-                        'content': 'You are a professional training story writer who creates engaging, educational narratives that help trainers deliver effective learning experiences. Your stories should be relatable, memorable, and directly applicable to the training objectives.'
+                        'content': 'You are a professional training story writer who creates funny, engaging, and educational narratives. Your stories should be humorous yet meaningful, with workplace comedy that makes learning memorable while delivering clear training value. Think of yourself as a comedian who also happens to be an excellent trainer - your stories should make people laugh while they learn.'
                     },
                     {
                         'role': 'user',
@@ -193,14 +193,23 @@ CRITICAL REQUIREMENTS:
 - Keep the story to exactly 400 words or less
 - Format the response as clean HTML with appropriate tags (no markdown)
 
-Example opening: "I was working as a [role] when I encountered..."
+STORY TONE REQUIREMENTS:
+- Make the story FUNNY and engaging with humor, light moments, or amusing situations
+- Include relatable workplace comedy (awkward moments, funny misunderstandings, quirky colleagues)
+- Use the trainer's personal detail in a humorous way if possible
+- Add amusing dialogue or internal thoughts
+- Keep it professional but entertaining - appropriate for workplace training
+- Balance humor with meaningful learning outcomes
+- The comedy should enhance, not distract from, the training message
+
+Example opening: "I was working as a [role] when I encountered the most ridiculous situation..." or "Little did I know that my [personal detail] would save the day in the most unexpected way..."
 
 Structure your HTML response as:
 <div class="story-section">
 <h3>The Story</h3>
-<p>[First-person opening: "I was working in... when I encountered..." - set the scene with "I"]</p>
-<p>[Challenge paragraph: "I noticed..." "I realized..." - present the problem from my perspective]</p>
-<p>[Resolution paragraph: "I decided to..." "I applied..." - show how I solved it using training concepts]</p>
+<p>[Funny first-person opening: "I was working in... when the most ridiculous thing happened..." - set the scene with humor and "I"]</p>
+<p>[Amusing challenge paragraph: "I couldn't believe it when..." "The situation got even more absurd..." - present the problem with comedic elements from my perspective]</p>
+<p>[Clever resolution paragraph: "That's when I remembered..." "Using my [personal detail] and [training concept], I managed to..." - show how I solved it with both humor and meaningful learning]</p>
 </div>
 
 <div class="training-section">
